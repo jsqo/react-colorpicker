@@ -4,6 +4,7 @@ import {useState} from 'react';
 
 import Slide from './Slide';
 import FloatingWidget from './FloatingWidget';
+import Footer from './Footer';
 
 const slides = require("./slides.json").slides;
 
@@ -22,6 +23,7 @@ function App() {
 				{slideItems}
 			</div>
 			<FloatingWidget color={color} />
+			<Footer />
 		</div>
 	);
 }
