@@ -1,0 +1,36 @@
+{
+	"slides": [
+		{
+			"background": "#fff",
+			"elements": [
+				{"tag": "h1", "content": "Hello, World!"},
+				{"tag": "h4", "content": "Hello, World!"},
+				{"tag": "p", "content": "Hello, World!"}
+			]
+		},
+		{
+			"background": "#000",
+			"elements": [
+				{"tag": "h1", "content": "Hello, World!"},
+				{"tag": "h4", "content": "Hello, World!"},
+				{"tag": "p", "content": "Hello, World!"}
+			]
+		},
+		{
+			"background": "purple",
+			"elements": [
+				{"tag": "h1", "content": "Hello, World!"},
+				{"tag": "h4", "content": "Hello, World!"},
+				{"tag": "p", "content": "Hello, World!"}
+			]
+		},
+		{
+			"background": "grey",
+			"elements": [
+				{"tag": "h1", "content": "Hello, World!"},
+				{"tag": "h4", "content": "Hello, World!"},
+				{"tag": "p", "content": "Hello, World!"}
+			]
+		}
+	]
+}
