@@ -1,0 +1,12 @@
+
+div.FloatingWidget {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: 2px solid #bbb;
+	padding: 20px;
+	background-color: #fff;
+	color: #222;
+}
+
+

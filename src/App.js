@@ -3,6 +3,7 @@ import './App.css';
 import {useState} from 'react';
 
 import Slide from './Slide';
+import FloatingWidget from './FloatingWidget';
 
 const slides = require("./slides.json").slides;
 
@@ -20,6 +21,7 @@ function App() {
 			<div className="Slides">
 				{slideItems}
 			</div>
+			<FloatingWidget color={color} />
 		</div>
 	);
 }
