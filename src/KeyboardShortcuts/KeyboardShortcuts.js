@@ -7,7 +7,9 @@ function KeyboardShortcuts () {
 	let shortcutItems = shortcuts.map((shortcut, index) => {
 		return (
 			<div className="flex m-4" key={index}>
-				<div className={"w-28 p-4 pl-8 mr-2 font-bold rounded-l-full text-right " + shortcut.className}>{shortcut.name}</div>
+				<div className="w-32 mr-2 text-right">
+					<div className={"p-4 pl-8 font-bold rounded-l-full inline-block "  + shortcut.className}>{shortcut.name}</div>
+				</div>
 				<div className={"p-4 pr-8 rounded-r-full " + shortcut.className}>{shortcut.description}</div>
 			</div>
 		);

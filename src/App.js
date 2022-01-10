@@ -17,7 +17,7 @@ function App () {
 	});
 	let hexColor = rgbToHex(color);
 
-	let [colorHistory, setColorHistory] = React.useState([hexColor]);
+	let [colorHistory, setColorHistory] = React.useState([]);
 
 	function updateColor (rc, gc, bc) {
 		let jump = 5;
