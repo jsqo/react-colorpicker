@@ -18,7 +18,7 @@ function Slide ({slideContent, color}) {
 	});
 
 	return (
-		<div className="Slide" style={style}>
+		<div className="Slide p-20" style={style}>
 			{contentItems}
 		</div>
 	);

@@ -16,7 +16,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header">
+			<header className="App-header p-20">
 				<p>Hello, React!</p>
 			</header>
 			<div className="Slides">
