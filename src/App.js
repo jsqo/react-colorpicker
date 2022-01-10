@@ -2,26 +2,19 @@ import './App.css';
 
 import {useState} from 'react';
 
-import Slide from './Slide';
+import Slides from './Slides';
 import FloatingWidget from './FloatingWidget';
 import Footer from './Footer';
 
-const slides = require("./slides.json").slides;
-
 function App() {
-	let [color, serColor] = useState("#777");
-	let slideItems = slides.map((slide) => 
-		<Slide slideContent={slide} color={color} />
-	);
+	let [color, setColor] = useState("#777");
 
 	return (
 		<div className="App">
 			<header className="App-header p-20">
 				<p>Hello, React!</p>
 			</header>
-			<div className="Slides">
-				{slideItems}
-			</div>
+			<Slides color={color} />
 			<FloatingWidget color={color} />
 			<Footer />
 		</div>
