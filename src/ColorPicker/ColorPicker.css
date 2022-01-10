@@ -1,0 +1,7 @@
+
+.ColorPickerHeader {
+	background-image: repeating-linear-gradient(45deg, transparent 0px, transparent 48px, #ddd 48px, #ddd 50px),
+		repeating-linear-gradient(-45deg, transparent 0px, transparent 48px, #ddd 48px, #ddd 50px);
+}
+
+

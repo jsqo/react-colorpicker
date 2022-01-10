@@ -2,6 +2,7 @@ import './App.css';
 
 import {useState} from 'react';
 
+import ColorPicker from './ColorPicker';
 import Slides from './Slides';
 import FloatingWidget from './FloatingWidget';
 import Footer from './Footer';
@@ -11,9 +12,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<header className="App-header p-20">
-				<p>Hello, React!</p>
-			</header>
+			<ColorPicker color={color} setColor={setColor} />
 			<Slides color={color} />
 			<FloatingWidget color={color} />
 			<Footer />
