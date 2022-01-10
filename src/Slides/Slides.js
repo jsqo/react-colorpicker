@@ -6,9 +6,9 @@ const slides = require("./slides.json");
 
 function Slides ({hexColor, color}) {
 	let slideItems = slides.colors.map((slideColor, index) => 
-		<Fragment>
-			<Slide elements={slides.elements} background={hexColor} foreground={slideColor.code} key={index * 2} />
-			<Slide elements={slides.elements} background={slideColor.code} foreground={hexColor} key={index * 2 + 1} />
+		<Fragment key={index * 2}>
+			<Slide elements={slides.elements} background={hexColor} foreground={slideColor.code} />
+			<Slide elements={slides.elements} background={slideColor.code} foreground={hexColor} />
 		</Fragment>
 	);
 

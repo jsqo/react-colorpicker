@@ -5,6 +5,7 @@ import React from 'react';
 import ColorPicker from './ColorPicker';
 import Slides from './Slides';
 import FloatingWidget from './FloatingWidget';
+import ColorHistory from './ColorHistory';
 import KeyboardShortcuts from './KeyboardShortcuts';
 import Footer from './Footer';
 
@@ -16,6 +17,8 @@ function App () {
 	});
 	let hexColor = rgbToHex(color);
 
+	let [colorHistory, setColorHistory] = React.useState([hexColor]);
+
 	function updateColor (rc, gc, bc) {
 		let jump = 5;
 		let r = roundOffComponent(color.r + rc * jump);
@@ -23,6 +26,10 @@ function App () {
 		let b = roundOffComponent(color.b + bc * jump);
 		setColor({r: r, g: g, b: b});
 		hexColor = rgbToHex(color);
+	}
+
+	function updateColorHistory () {
+		setColorHistory([...colorHistory, hexColor]);
 	}
 
 	function randomizeColor (e) {
@@ -33,6 +40,7 @@ function App () {
 			b: getRandomComponent()
 		});
 		hexColor = rgbToHex(color);
+		updateColorHistory();
 	}
 
 	function handleKeyPress (e) {
@@ -67,6 +75,7 @@ function App () {
 			<ColorPicker color={color} setColor={setColor} />
 			<Slides hexColor={hexColor} color={color} />
 			<FloatingWidget hexColor={hexColor} color={color} />
+			<ColorHistory colorHistory={colorHistory} />
 			<KeyboardShortcuts />
 			<Footer />
 		</div>
