@@ -1,60 +1,10 @@
 {
-	"slides": [
-		{
-			"background": "#fff",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"foreground": "#fff",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"background": "#000",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"foreground": "#000",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"background": "purple",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"foreground": "purple",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		},
-		{
-			"background": "darksalmon",
-			"elements": [
-				{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
-				{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
-				{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
-			]
-		}
+	"colors": [
+		"#fff", "#000", "purple", "darksalmon"
+	],
+	"elements": [
+		{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
+		{"tag": "h4", "class": "text-3xl py-4", "content": "This is just some text to see how 3XL looks."},
+		{"tag": "p", "class": "", "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a arcu non scelerisque. Suspendisse volutpat pulvinar pellentesque. Nullam tincidunt urna accumsan risus mattis aliquet. Aliquam volutpat quam risus, id euismod magna feugiat sit amet. Sed et enim id est imperdiet congue."}
 	]
 }
