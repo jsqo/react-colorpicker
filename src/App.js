@@ -1,6 +1,6 @@
 import './App.css';
 
-import {useState} from 'react';
+import React from 'react';
 
 import ColorPicker from './ColorPicker';
 import Slides from './Slides';
@@ -10,8 +10,8 @@ import Footer from './Footer';
 import {rgbToHex, roundOffComponent, getRandomComponent} from './Utils';
 
 function App() {
-	let [color, setColor] = useState({
-		"r": 128, "g": 128, "b": 128
+	let [color, setColor] = React.useState({
+		"r": 250, "g": 250, "b": 0
 	});
 	let hexColor = rgbToHex(color);
 
