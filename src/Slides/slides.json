@@ -2,7 +2,7 @@
 	"colors": [
 		{"name": "White", "code": "#fff"},
 		{"name": "Black", "code": "#000"},
-		{"name": "Indian red", "code": "indianred"},
+		{"name": "Forest green", "code": "forestgreen"},
 		{"name": "Purple", "code": "purple"},
 		{"name": "Dark salmon", "code": "darksalmon"}
 	],
