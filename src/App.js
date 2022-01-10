@@ -7,7 +7,7 @@ import Slides from './Slides';
 import FloatingWidget from './FloatingWidget';
 import Footer from './Footer';
 
-import {rgbToHex, roundOffComponent} from './Utils';
+import {rgbToHex, roundOffComponent, getRandomComponent} from './Utils';
 
 function App() {
 	let [color, setColor] = useState({
@@ -21,6 +21,16 @@ function App() {
 		let g = roundOffComponent(color.g + gc * jump);
 		let b = roundOffComponent(color.b + bc * jump);
 		setColor({r: r, g: g, b: b});
+		hexColor = rgbToHex(color);
+	}
+
+	function randomizeColor (e) {
+		e.preventDefault();
+		setColor({
+			r: getRandomComponent(),
+			g: getRandomComponent(),
+			b: getRandomComponent()
+		});
 		hexColor = rgbToHex(color);
 	}
 
@@ -41,6 +51,8 @@ function App() {
 			case "X": updateColor(0, 0, -1); break;
 			case "C": updateColor(0, 0, 1); break;
 			case "V": updateColor(0, 0, 5); break;
+
+			case " ": randomizeColor(e); break;
 			default:
 				console.log("default case");
 		}

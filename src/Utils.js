@@ -15,7 +15,12 @@ function roundOffComponent (c) {
 	return c;
 }
 
+function getRandomComponent () {
+	return parseInt(Math.random() * 256);
+}
+
 module.exports = {
 	rgbToHex: rgbToHex,
-	roundOffComponent: roundOffComponent
+	roundOffComponent: roundOffComponent,
+	getRandomComponent: getRandomComponent
 };
