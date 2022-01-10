@@ -13,7 +13,7 @@ function Slide ({slideContent, color}) {
 	let contentItems = slideContent.elements.map(function (element, index) {
 		const TagName = element.tag;
 		return (
-			<TagName key={index}>{element.content}</TagName>
+			<TagName key={index} className={element.class}>{element.content}</TagName>
 		);
 	});
 
