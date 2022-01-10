@@ -4,20 +4,20 @@ import Slide from './Slide';
 
 const slides = require("./slides.json");
 
-function Slides ({color}) {
-	let slideItems = slides.colors.map((slideColor) => 
+function Slides ({hexColor, color}) {
+	let slideItems = slides.colors.map((slideColor, index) => 
 		<Fragment>
-			<Slide elements={slides.elements} background={color} foreground={slideColor.code} />
-			<Slide elements={slides.elements} background={slideColor.code} foreground={color} />
+			<Slide elements={slides.elements} background={hexColor} foreground={slideColor.code} key={index * 2} />
+			<Slide elements={slides.elements} background={slideColor.code} foreground={hexColor} key={index * 2 + 1} />
 		</Fragment>
 	);
 
-	let preFooterSlideBoxItems = slides.colors.map((slideColor) => {
+	let preFooterSlideBoxItems = slides.colors.map((slideColor, index) => {
 		let style = {
 			"backgroundColor": slideColor.code
 		};
 		return (
-			<div className="SlideBox w-40 m-4 inline-block border-2">
+			<div className="SlideBox w-40 m-4 inline-block border-2" key={index}>
 				<div className="p-2 font-bold">{slideColor.name}</div>
 				<div className="h-24" style={style}></div>
 				<div className="p-2">
