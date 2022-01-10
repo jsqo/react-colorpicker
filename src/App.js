@@ -5,11 +5,12 @@ import React from 'react';
 import ColorPicker from './ColorPicker';
 import Slides from './Slides';
 import FloatingWidget from './FloatingWidget';
+import KeyboardShortcuts from './KeyboardShortcuts';
 import Footer from './Footer';
 
 import {rgbToHex, roundOffComponent, getRandomComponent} from './Utils';
 
-function App() {
+function App () {
 	let [color, setColor] = React.useState({
 		"r": 250, "g": 250, "b": 0
 	});
@@ -66,6 +67,7 @@ function App() {
 			<ColorPicker color={color} setColor={setColor} />
 			<Slides hexColor={hexColor} color={color} />
 			<FloatingWidget hexColor={hexColor} color={color} />
+			<KeyboardShortcuts />
 			<Footer />
 		</div>
 	);

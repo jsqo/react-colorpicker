@@ -1,0 +1,20 @@
+{
+	"shortcuts": [
+		{"name": "Q", "description": "Decrements R by 25", "className": "bg-red-300"},
+		{"name": "W", "description": "Decrements R by 5", "className": "bg-red-300"},
+		{"name": "E", "description": "Increments R by 5", "className": "bg-red-300"},
+		{"name": "R", "description": "Increments R by 25", "className": "bg-red-300"},
+
+		{"name": "A", "description": "Decrements G by 25", "className": "bg-green-300"},
+		{"name": "S", "description": "Decrements G by 5", "className": "bg-green-300"},
+		{"name": "D", "description": "Increments G by 5", "className": "bg-green-300"},
+		{"name": "F", "description": "Increments G by 25", "className": "bg-green-300"},
+
+		{"name": "Z", "description": "Decrements B by 25", "className": "bg-blue-300"},
+		{"name": "X", "description": "Decrements B by 5", "className": "bg-blue-300"},
+		{"name": "C", "description": "Increments B by 5", "className": "bg-blue-300"},
+		{"name": "V", "description": "Increments B by 25", "className": "bg-blue-300"},
+
+		{"name": "Spacebar", "description": "Generate a random color", "className": "bg-slate-300"}
+	]
+}
