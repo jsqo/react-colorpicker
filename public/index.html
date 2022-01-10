@@ -13,7 +13,13 @@
 		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 		<title>jsqo's colorpicker</title>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RPRYZLG4KX"></script>
-		<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-RPRYZLG4KX');</script>
+		<script type="text/javascript">
+			if (document.location.hostname.search("jsqo.github.io") !== -1) {
+				window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-RPRYZLG4KX');
+			} else {
+				// console.log("No analytics code ran.");
+			}
+		</script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
