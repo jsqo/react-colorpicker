@@ -1,6 +1,9 @@
 {
 	"colors": [
-		"#fff", "#000", "purple", "darksalmon"
+		{"name": "White", "code": "#fff"},
+		{"name": "Black", "code": "#000"},
+		{"name": "Purple", "code": "purple"},
+		{"name": "Darksalmon", "code": "darksalmon"}
 	],
 	"elements": [
 		{"tag": "h1", "class": "text-6xl", "content": "Hello, World!"},
