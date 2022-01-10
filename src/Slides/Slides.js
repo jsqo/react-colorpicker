@@ -18,9 +18,9 @@ function Slides ({color}) {
 		};
 		return (
 			<div className="SlideBox w-40 m-4 inline-block border-2">
-				<div class="p-2 font-bold">{slideColor.name}</div>
+				<div className="p-2 font-bold">{slideColor.name}</div>
 				<div className="h-24" style={style}></div>
-				<div class="p-2">
+				<div className="p-2">
 					<code>{slideColor.code}</code>
 				</div>
 			</div>
