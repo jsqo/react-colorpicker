@@ -12,7 +12,7 @@ export default function RGBSlider ({name, bg, componentValue, setComponentValue}
 		let percent = (e.pageX - e.currentTarget.offsetLeft) * 100 / (e.currentTarget.offsetWidth);
 		percent = percent.toFixed(2);
 		let newComponentValue = roundOffComponent(Math.floor(percent * 255 / 100));
-		if (newComponentValue != componentValue) {
+		if (newComponentValue !== componentValue) {
 			setComponentValue(newComponentValue);
 		}
 		// console.log(`${e.pageX} == ${e.currentTarget.offsetLeft} == ${e.currentTarget.offsetWidth}`);
