@@ -24,8 +24,8 @@ export default function RGBSlider ({name, bg, componentValue, setComponentValue}
 		<div className="p-4">
 			<h3>{name}</h3>
 			<div
-				className={`${bg} h-6 my-2 relative rounded-md`}
-				onClick={handleClick}
+				className={`${bg} focus:outline focus:outline-2 focus:outline-slate-800 duration-200 h-6 my-2 relative`}
+				onClick={handleClick} tabindex="0"
 			>
 				<RGBSliderButton percentValue={percentValue} />
 			</div>
