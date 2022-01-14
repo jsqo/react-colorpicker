@@ -6,7 +6,7 @@ const shortcuts = require("./shortcuts.json").shortcuts;
 function KeyboardShortcuts () {
 	let shortcutItems = shortcuts.map((shortcut, index) => {
 		return (
-			<div className="flex m-4" key={index}>
+			<div className="flex my-4" key={index}>
 				<div className="w-32 mr-2 text-right">
 					<div className={"p-4 pl-8 font-bold rounded-l-full inline-block "  + shortcut.className}>{shortcut.name}</div>
 				</div>
@@ -16,9 +16,9 @@ function KeyboardShortcuts () {
 	});
 
 	return (
-		<div className="KeyboardShortcuts px-8 py-24">
+		<div className="KeyboardShortcuts px-4 py-24">
 			<div>
-				<h2 className="p-8 text-4xl">Keyboard shortcuts:</h2>
+				<h2 className="py-8 text-4xl text-center sm:text-left">Keyboard shortcuts</h2>
 			</div>
 			<div>
 				{shortcutItems}
