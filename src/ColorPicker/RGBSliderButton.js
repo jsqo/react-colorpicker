@@ -8,7 +8,7 @@ export default function RGBSliderButton ({percentValue}) {
 
 	return (
 		<div
-			className="absolute w-6 h-full bg-white border-slate-400 rounded-full border-2 -translate-x-1/2 shadow"
+			className="absolute w-3 h-8 border-white bg-slate-400 border-2 -top-1 outline outline-2 outline-slate-400 -translate-x-1/2 shadow-xl"
 			style={style}
 			data-s={percentValue}
 			></div>
