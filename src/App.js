@@ -76,8 +76,8 @@ function App () {
 			tabIndex="0"
 			onKeyPress={handleKeyPress}
 		>
-			<ColorPicker color={color}
-				setColor={setColor}
+			<ColorPicker
+				color={color} hexColor={hexColor}
 				setRed={setRed} setGreen={setGreen} setBlue={setBlue}
 			/>
 			<Slides hexColor={hexColor} color={color} />
