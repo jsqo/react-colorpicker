@@ -9,11 +9,15 @@ export default function RGBSlider ({name, bg, componentValue, setComponentValue}
 	let percentValue = (componentValue * 100) / 256;
 
 	function handleClick (e) {
-		let percent = (e.pageX - e.target.offsetLeft) * 100 / (e.target.offsetWidth);
+		let percent = (e.pageX - e.currentTarget.offsetLeft) * 100 / (e.currentTarget.offsetWidth);
 		percent = percent.toFixed(2);
 		let newComponentValue = roundOffComponent(Math.floor(percent * 255 / 100));
-		setComponentValue(newComponentValue);
+		if (newComponentValue != componentValue) {
+			setComponentValue(newComponentValue);
+		}
+		// console.log(`${e.pageX} == ${e.currentTarget.offsetLeft} == ${e.currentTarget.offsetWidth}`);
 		// console.log("Mouse was clicked: " + percent + "%");
+		// console.log(e.currentTarget);
 	}
 
 	return (
