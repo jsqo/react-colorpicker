@@ -6,12 +6,12 @@ import RGBSliderButton from './RGBSliderButton';
 
 
 export default function RGBSlider ({name, bg, componentValue, setComponentValue}) {
-	let [percentValue, setPercentValue] = React.useState(componentValue * 100 / 256);
+	let percentValue = (componentValue * 100) / 256;
 
 	function handleClick (e) {
 		let percent = (e.pageX - e.target.offsetLeft) * 100 / (e.target.offsetWidth);
 		percent = percent.toFixed(2);
-		setPercentValue(percent);
+		// setPercentValue(percent);
 		// setComponentValue(roundOffComponent(percent * 255));
 		console.log("Mouse was clicked");
 	}
