@@ -13,7 +13,7 @@ import {rgbToHex, roundOffComponent, getRandomComponent} from './Utils';
 
 function App () {
 	let [color, setColor] = React.useState({
-		"r": 250, "g": 250, "b": 0
+		"r": 100, "g": 80, "b": 170
 	});
 	let hexColor = rgbToHex(color);
 

@@ -22,7 +22,10 @@ export default function RGBSlider ({name, bg, componentValue, setComponentValue}
 
 	return (
 		<div className="p-4">
-			<h3>{name}</h3>
+			<h3>
+				{name}
+				<span className={`text-black text-sm px-2 py-1`}>{componentValue}</span>
+			</h3>
 			<div
 				className={`${bg} focus:outline focus:outline-2 focus:outline-slate-800 duration-200 h-6 my-2 relative`}
 				onClick={handleClick} tabindex="0"
