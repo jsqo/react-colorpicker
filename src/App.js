@@ -19,6 +19,10 @@ function App () {
 
 	let [colorHistory, setColorHistory] = React.useState([]);
 
+	function setRed (r) {setColor(color => ({...color, r: r}));}
+	function setGreen (g) {setColor(color => ({...color, g: g}));}
+	function setBlue (b) {setColor(color => ({...color, b: b}));}
+
 	function updateColor (rc, gc, bc) {
 		let jump = 5;
 		let r = roundOffComponent(color.r + rc * jump);
@@ -72,7 +76,10 @@ function App () {
 			tabIndex="0"
 			onKeyPress={handleKeyPress}
 		>
-			<ColorPicker color={color} setColor={setColor} />
+			<ColorPicker color={color}
+				setColor={setColor}
+				setRed={setRed} setGreen={setGreen} setBlue={setBlue}
+			/>
 			<Slides hexColor={hexColor} color={color} />
 			<FloatingWidget hexColor={hexColor} color={color} />
 			<ColorHistory colorHistory={colorHistory} />
